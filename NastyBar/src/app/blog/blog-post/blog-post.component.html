@@ -1,1 +1,8 @@
-<p>blog-post works!</p>
+<div *ngIf="post; else notFound">
+    <h2>{{ post.title }}</h2>
+    <p>{{post.content}}</p>
+</div>
+
+<ng-template #notFound>
+    <p>Blog post not found.</p>
+</ng-template>

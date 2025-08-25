@@ -1,6 +1,6 @@
 <h1>Blog</h1>
 <ul>
-    <li *ngFor="let p of blogPosts">
-        <a routerLink="['/blogs', post.id]">{{p.title}}</a> - {{ p.date }}
+    <li *ngFor="let post of blogPosts">
+        <a [routerLink]="['/blog', post.id]">{{post.title}}</a> - {{ post.date }}
     </li>
 </ul>
