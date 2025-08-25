@@ -1,1 +1,6 @@
-<p>blog-list works!</p>
+<h1>Blog</h1>
+<ul>
+    <li *ngFor="let p of blogPosts">
+        <a routerLink="['/blogs', post.id]">{{p.title}}</a> - {{ p.date }}
+    </li>
+</ul>

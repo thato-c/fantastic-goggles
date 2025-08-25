@@ -1,0 +1,4 @@
+/
+/blog
+/blog/welcome
+/blog/vapes-101
