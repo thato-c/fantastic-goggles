@@ -1,6 +1,26 @@
 <h1>Blog</h1>
-<ul>
-    <li *ngFor="let post of blogPosts">
-        <a [routerLink]="['/blog', post.id]">{{post.title}}</a> - {{ post.date }}
-    </li>
-</ul>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of blogPosts">
+            <td>{{ post.title }}</td>
+            <td>{{ post.date }}</td>
+            <td>
+                <a [routerLink]="['/blog', post.id]">Read More</a>
+            </td>
+        </tr>
+    </tbody>
+    
+    
+</table>
