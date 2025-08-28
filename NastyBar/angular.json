@@ -98,6 +98,18 @@
             ],
             "scripts": []
           }
+        },
+        "prerender":{
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "browserTarget": "NastyBar:build:production",
+            "serverTarget": "NastyBar:build:production",
+            "routes": ["./prerender.config.ts"]
+          },
+          "configurations": {
+            "production": {
+            }
+          }
         }
       }
     }
