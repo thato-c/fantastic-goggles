@@ -24,8 +24,8 @@ jobs:
       
       - name: Build and prerender
         run: |
-          npm run build || true
-          npm run prerender || true
+          npm run build
+          npm run prerender
         working-directory: ./NastyBar
       
       - name: Deploy to GitHub Pages
