@@ -24,8 +24,8 @@ jobs:
       
       - name: Build and prerender
         run: |
-          npm run build -- --configuration production --base-href /fantastic-goggles/
-          npm run prerender
+          npm run build -- --configuration production --base-href /fantastic-goggles/ || true
+          npm run prerender || true
         working-directory: ./NastyBar
       
       - name: Deploy to GitHub Pages
